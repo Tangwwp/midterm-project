@@ -6,11 +6,10 @@
     <title>Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="./output.css" rel="stylesheet">
-    <script src="script.js"></script>
 </head>
-<body>
+<body class="justify-center items-center">
     <!--  -->
-        <header class="flex p-4">  
+        <header class="flex p-1">  
             <div class="ml-auto space-x-6 hidden md:flex">
                 <a href="https://www.google.co.th" target="_blank" class="text-black hover:underline">Works</a>
                 <a href="https://www.google.co.th" target="_blank" class="text-black hover:underline">Blog</a>
@@ -22,6 +21,12 @@
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                 </svg>
             </button>
+            <!-- Mobile Menu (hidden by default) -->
+            <div class="md:hidden hidden" id="mobileMenu"> 
+                <a href="https://www.google.co.th" target="_blank" class="block hover:bg-gray-100 py-2 px-4 rounded">Works</a>
+                <a href="https://www.google.co.th" target="_blank" class="block hover:bg-gray-100 py-2 px-4 rounded">Blog</a>
+                <a href="https://www.google.co.th" target="_blank" class="block hover:bg-gray-100 py-2 px-4 rounded">Contact</a>
+            </div>
         </header>
         <div class="mt-10 mb-10">
         <div class="grid grid-cols-12 gap-4 justify-self-center">
@@ -29,7 +34,7 @@
                 <h1 class="font-bold text-4xl">Hi, I am Thaivi,</h1>
                 <h2 class="font-bold text-2xl">THAIVIVAT INSURANCE PCL.</h2>
                 <p class="text-lg mt-4">Hello! I am a web developer with a passion for creating responsive and user-friendly websites. I love to work on projects that solve real-world problems and improve people's experiences with technology.</p>
-                <button class=" mt-4 bg-red-500 text-white px-6 py-3 rounded-sm">
+                <button class=" mt-4 bg-c1 text-white px-6 py-3 rounded-sm">
                     Download Resume
                 </button>
             </div>
@@ -39,7 +44,7 @@
         </div>
     </div>
         
-        <section class="bg-gradient-to-r from-pink-100 via-purple-200 to-blue-200">
+        <section class="bg-c2">
             <div class="max-w-screen-2xl px-4 py-8 mx-auto space-y-6 lg:space-y-4 lg:py-10 lg:px-10">
                 <div class="mb-8 flex justify-center lg:justify-between ">
                     <h3 class="text-lg font-medium text-gray-600 ">Recent posts</h3>
@@ -49,7 +54,7 @@
                 </div>
                 <div class="space-y-2 lg:grid lg:grid-cols-2 gap-4 lg:gap-6 xl:gap-8 lg:space-y-0">
                     <!-- Card -->
-                    <div class="flex flex-col p-4 mx-auto text-left text-gray-900 bg-white border border-gray-100 rounded-lg w-full lg:w-[300px] h-[300px]">
+                    <div class="flex flex-col p-4 mx-auto text-left text-gray-900 bg-white border border-gray-100 rounded-lg w-[70%]  h-[100%] ">
                         <h3 class="mb-2 text-lg font-semibold lg:text-2xl">Building a Design System</h3>
                         <div class="flex items-baseline mt-2">
                             <span class="mr-2 text-lg lg:text-xl">12 Feb 2023</span>
@@ -61,7 +66,7 @@
                         </div>
                     </div>
                     <!-- Card -->
-                    <div class="flex flex-col p-4 mx-auto text-left text-gray-900 bg-white border border-gray-100 rounded-lg w-full lg:w-[300px] h-[300px]">
+                    <div class="flex flex-col p-4 mx-auto text-left text-gray-900 bg-white border border-gray-100 rounded-lg w-[70%]  h-[100%]  ">
                         <h3 class="mb-2 text-xl font-semibold lg:text-2xl">Creating Pixel Perfect Icons</h3>
                         <div class="flex items-baseline mt-2">
                             <span class="mr-2 text-lg lg:text-xl">15 Mar 2023</span>
@@ -78,7 +83,7 @@
         </section>
         <div class="container mx-auto px-4 py-8">
             <div class="text-center lg:text-left">
-                <h3 class="text-2xl font-bold text-gray-800">Work Features</h3>
+                <h3 class="text-2xl text-c4">Work Features</h3>
             </div>
             <div class="grid grid-cols-1 gap-8">
                 <!-- Feature 1 -->
@@ -95,7 +100,7 @@
                             </div>
                         </div>
                         
-                        <p class="text-gray-600">Designing a Dashboard for a project or application involves careful planning to ensure usability, functionality, and clear presentation of key data. Below is an example of how you could describe a Dashboard Design in a portfolio or project description, emphasizing the design process, features, and user experience.</p>
+                        <p class="text-c3">Designing a Dashboard for a project or application involves careful planning to ensure usability, functionality, and clear presentation of key data. Below is an example of how you could describe a Dashboard Design in a portfolio or project description, emphasizing the design process, features, and user experience.</p>
                     </div>
                 </div>
             
@@ -112,7 +117,7 @@
                                 Website
                             </div>
                         </div>
-                        <p class="text-gray-600">The Website Design is built with the goal of delivering a seamless user experience while offering powerful functionality and aesthetic appeal. This project focuses on creating an interactive, visually stunning, and user-friendly website that meets the specific needs of its target audience.</p>
+                        <p class="text-c3">The Website Design is built with the goal of delivering a seamless user experience while offering powerful functionality and aesthetic appeal. This project focuses on creating an interactive, visually stunning, and user-friendly website that meets the specific needs of its target audience.</p>
                     </div>
                 </div>
             
@@ -129,7 +134,7 @@
                                 Database
                             </div>
                         </div>
-                        <p class="text-gray-600">A Database Design is a structured approach to creating and organizing the data for a software system or application. It includes planning the data structure, relationships between data, and how it will be stored, retrieved, and updated. The goal of database design is to ensure that the system is scalable, efficient, and can handle all necessary transactions and queries with minimal redundancy and maximum integrity.</p>
+                        <p class="text-c3">A Database Design is a structured approach to creating and organizing the data for a software system or application. It includes planning the data structure, relationships between data, and how it will be stored, retrieved, and updated. The goal of database design is to ensure that the system is scalable, efficient, and can handle all necessary transactions and queries with minimal redundancy and maximum integrity.</p>
                     </div>
                 </div>
             </div>
