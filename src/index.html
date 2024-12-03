@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="./output.css" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body>
+    
+        <header class="flex p-4">  
+            <div class="ml-auto space-x-6 hidden md:flex">
+                <a href="https://www.google.co.th" target="_blank" class="text-black hover:underline">Works</a>
+                <a href="https://www.google.co.th" target="_blank" class="text-black hover:underline">Blog</a>
+                <a href="https://www.google.co.th" target="_blank" class="text-black hover:underline">Contact</a>
+            </div>
+            <button class="text-black ml-auto md:hidden" id="menuButton">
+                <!-- Hamburger Menu -->
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </header>
+        <div class="mt-10 mb-10">
+        <div class="grid grid-cols-12 gap-4 justify-self-center">
+            <div class="col-span-12 lg:col-span-8 text-center lg:text-left justify-center p-4 max-w-screen-md order-2 lg:order-1">
+                <h1 class="font-bold text-4xl">Hi, I am Thaivi,</h1>
+                <h2 class="font-bold text-2xl">THAIVIVAT INSURANCE PCL.</h2>
+                <p class="text-lg mt-4">Hello! I am a web developer with a passion for creating responsive and user-friendly websites. I love to work on projects that solve real-world problems and improve people's experiences with technology.</p>
+                <button class=" mt-4 bg-red-500 text-white px-6 py-3 rounded-sm">
+                    Download Resume
+                </button>
+            </div>
+            <div class="col-span-12 lg:col-span-4 flex justify-center order-1 lg:order-2">
+                <img class="w-64 h-64 rounded-full" src="https://yt3.googleusercontent.com/ytc/AIdro_kMblJQLqzhJzBEDPRj8gwjKO92NhjZObgt7__w62QHP3c=s900-c-k-c0x00ffffff-no-rj" alt="Profile Image"/>
+            </div>
+        </div>
+    </div>
+        
+        <section class="bg-gradient-to-r from-pink-100 via-purple-200 to-blue-200">
+            <div class="max-w-screen-xl px-4 py-8 mx-auto space-y-6 lg:space-y-4 lg:py-10 lg:px-10">
+                <div class="mb-8 flex justify-center lg:justify-between">
+                    <span class="text-lg font-medium text-gray-600 text-left lg:text-center">Recent posts</span>
+                    <span class="hidden font-medium text-blue-600 lg:text-right lg:inline-flex">View all</span>
+                </div>
+                <div class="space-y-2 lg:grid lg:grid-cols-2 gap-4 lg:gap-6 xl:gap-8 lg:space-y-0">
+                    <!-- Card -->
+                    <div class="flex flex-col p-4 mx-auto text-left text-gray-900 bg-white border border-gray-100 rounded-lg w-full lg:w-[300px] h-[300px]">
+                        <h3 class="mb-2 text-lg font-semibold lg:text-2xl">Building a Design System</h3>
+                        <div class="flex items-baseline mt-2">
+                            <span class="mr-2 text-lg lg:text-xl">12 Feb 2023</span>
+                            <span class="ml-5 text-lg lg:text-xl">|</span>
+                            <span class="ml-5 text-lg lg:text-xl">Web Development, UI/UX Design</span>
+                        </div>
+                        <div class="flex items-baseline mt-1">
+                            <span class="mr-2 text-sm">This article explores how to create a scalable and efficient design system for building web applications, ensuring consistency and easy maintenance in the development process.</span>
+                        </div>
+                    </div>
+                    <!-- Card -->
+                    <div class="flex flex-col p-4 mx-auto text-left text-gray-900 bg-white border border-gray-100 rounded-lg w-full lg:w-[300px] h-[300px]">
+                        <h3 class="mb-2 text-xl font-semibold lg:text-2xl">Creating Pixel Perfect Icons</h3>
+                        <div class="flex items-baseline mt-2">
+                            <span class="mr-2 text-lg lg:text-xl">15 Mar 2023</span>
+                            <span class="ml-5 text-lg lg:text-xl">|</span>
+                            <span class="ml-5 text-lg lg:text-xl">Graphic Design, Iconography</span>
+                         
+                        </div>
+                        <div class="flex items-baseline mt-1">
+                            <span class="mr-2 text-sm">Learn how to create pixel-perfect icons for both web and mobile platforms with detailed tips and techniques to ensure scalability and consistency across devices.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="container mx-auto px-4 py-8">
+            <div class="text-center lg:text-left">
+                <h3 class="text-2xl font-bold text-gray-800">Work Features</h3>
+            </div>
+            <div class="grid grid-cols-1 gap-8">
+                <!-- Feature 1 -->
+                <div class="flex flex-col lg:flex-row items-center space-x-4 lg:space-x-6 p-4 border-b border-gray-300">
+                    <img src="dashboard-design.jpg" alt="Feature 1" class="w-48 h-48 object-cover mb-4 lg:mb-0 lg:w-48 lg:h-48">
+                    <div>
+                        <h3 class="text-xl font-semibold">Design Dashbord</h3>
+                        <div class="space-x-2">
+                            <div class="max-w-sm mx-auto inline-block px-2 py-1 font-bold bg-gray-800 text-white text-center rounded-2xl">
+                                2020
+                            </div>
+                            <div class="max-w-sm mx-auto inline-block px-2 py-1 bg-white text-gray-500 text-center rounded-2xl">
+                                Dashbord
+                            </div>
+                        </div>
+                        
+                        <p class="text-gray-600">Designing a Dashboard for a project or application involves careful planning to ensure usability, functionality, and clear presentation of key data. Below is an example of how you could describe a Dashboard Design in a portfolio or project description, emphasizing the design process, features, and user experience.</p>
+                    </div>
+                </div>
+            
+                <!-- Feature 2 -->
+                <div class="flex flex-col lg:flex-row items-center space-x-4 lg:space-x-6 p-4 border-b border-gray-300">
+                    <img src="Web-Design.png" alt="Feature 2" class="w-48 h-48 object-cover mb-4 lg:mb-0 lg:w-48 lg:h-48">
+                    <div>
+                        <h3 class="text-xl font-semibold">Design Website</h3>
+                        <div class="space-x-2">
+                            <div class="max-w-sm mx-auto inline-block p-1 bg-gray-800 text-white text-center rounded-lg">
+                                2021
+                            </div>
+                            <div class="max-w-sm mx-auto inline-block p-1 bg-white text-black text-center rounded-lg">
+                                Website
+                            </div>
+                        </div>
+                        <p class="text-gray-600">The Website Design is built with the goal of delivering a seamless user experience while offering powerful functionality and aesthetic appeal. This project focuses on creating an interactive, visually stunning, and user-friendly website that meets the specific needs of its target audience.</p>
+                    </div>
+                </div>
+            
+                <!-- Feature 3 -->
+                <div class="flex flex-col lg:flex-row items-center space-x-4 lg:space-x-6 p-4 border-b border-gray-300">
+                    <img src="database-design.png" alt="Feature 3" class="w-48 h-48 object-cover mb-4 lg:mb-0 lg:w-48 lg:h-48">
+                    <div>
+                        <h3 class="text-xl font-semibold">Design Database</h3>
+                        <div class="space-x-2">
+                            <div class="max-w-sm mx-auto inline-block p-1 bg-gray-800 text-white text-center rounded-lg">
+                                2021
+                            </div>
+                            <div class="max-w-sm mx-auto inline-block p-1 bg-white text-black text-center rounded-lg">
+                                Database
+                            </div>
+                        </div>
+                        <p class="text-gray-600">A Database Design is a structured approach to creating and organizing the data for a software system or application. It includes planning the data structure, relationships between data, and how it will be stored, retrieved, and updated. The goal of database design is to ensure that the system is scalable, efficient, and can handle all necessary transactions and queries with minimal redundancy and maximum integrity.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script>
+            const menuButton = document.getElementById('menuButton');
+            const mobileMenu = document.getElementById('mobileMenu');
+            
+            menuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        </script>
+</body>
+<footer class="bg-gray-800 text-white p-4">
+    <div class="container mx-auto text-center">
+      <p>&copy; Thaivivat. All rights reserved.</p>
+    </div>
+  </footer>
+</html>
